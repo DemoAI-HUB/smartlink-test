@@ -1,0 +1,31 @@
+ <link rel="stylesheet" href="style.css" />
+
+<div class="container">
+  <h2>Smart Link Generator</h2>
+
+  <input id="originalLink" placeholder="Original URL" />
+  <button onclick="toggleAdvanced()">Advanced Settings</button>
+
+  <div id="advancedSettings" style="display:none;">
+    <input id="slug" placeholder="Custom slug (e.g. promo2025)" />
+    <input id="utmSource" placeholder="UTM Source (e.g. instagram)" />
+    <input id="utmCampaign" placeholder="UTM Campaign (e.g. autumn)" />
+    <select id="domain">
+      <option value="mysmartl.ink">mysmartl.ink</option>
+        <option value="mysmartlink.to">mysmartlink.to</option>
+        <option value="smartlink.click">smartlink.click</option>
+        <option value="smartlink.tools">smartlink.tools</option>
+        <option value="myurll.ink">myurll.ink</option>
+        <option value="myezlink.to">myezlink.to</option>
+        <option value="ezlink.now">ezlink.now</option>
+        <option value="linkclick.to">linkclick.to</option>
+        <option value="linkshort.to">linkshort.to</option>
+      <option value="testsmartlink.netlify.app">testsmartlink.netlify.app</opt>
+    </select>
+  </div>
+
+  <button onclick="generateLink()">Generate Short Link</button>
+  <div id="result" class="result"></div>
+</div>
+
+<script src="script.js"></script>
